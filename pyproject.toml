@@ -14,6 +14,12 @@ ytmusicapi = "*"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
+[dependency-groups]
+dev = [
+    "tk>=0.1.0",
+    "ytmusicapi>=1.11.3",
+]
+
 [tool.poetry.scripts]
 s2yt_gui = "spotify2ytmusic.gui:main"
 s2yt_load_liked = "spotify2ytmusic.cli:load_liked"
